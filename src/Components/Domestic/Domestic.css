@@ -1,5 +1,6 @@
-#domesticMap{
+#divDomesticCount{
     display: flex;
-    flex-direction: column;
-    width: 400px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
