@@ -1,11 +1,13 @@
 import React from "react";
+import Graph from "../Graph/Graph";
+
 
 const Domestic = () => {
     return(
         <div>
             <h1>국내 확진 추이</h1>
             <div id = "divDomesticGraph">
-                <p>여기엔 그래프를 넣을거다</p>
+                <Graph/>
             </div> {/* End of divDomesticGraph */}
 
             <div id = "divNumberofDomestic">

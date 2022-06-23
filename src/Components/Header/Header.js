@@ -1,5 +1,5 @@
 import React from "react";
-
+import { monkeypoxPhoto } from "../../monkeypoxphoto.jpeg";
 const Header = () => {
     return(
         <div>
@@ -7,7 +7,7 @@ const Header = () => {
             <h1>MONKEYPOX LIVE</h1>
             <div id = "divImageMonkeypox">
                 {/* IMG */}
-                <p>여기엔 질병 사진이 들어갈거다.</p>
+                <p><img src={ monkeypoxPhoto }/></p>
             </div>
             {/* End of divImageMonkeypox */}
 
