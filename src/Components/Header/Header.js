@@ -3,13 +3,15 @@ import React from "react";
 const Header = () => {
     return(
         <div>
-            <h1>Header Component</h1>
+            <h1>1q2w3e4r! logo</h1>
+            <h1>MONKEYPOX LIVE</h1>
             <div id = "divImageMonkeypox">
                 {/* IMG */}
+                <p>여기엔 질병 사진이 들어갈거다.</p>
             </div>
             {/* End of divImageMonkeypox */}
 
-            <h2>원숭이 두창?</h2>
+            <h2>원숭이 두창이란 무엇인가요? 들어갈 부분</h2>
 
             <div id = "divExplainMonkeypox">
                 원숭이두창(Monkeypox)은 원숭이두창바이러스(Monkeypox virus)에 감염되어 발생하는 희귀질환으로, poxviridae과의 Orthopoxvirus속에 속합니다.<br/>
