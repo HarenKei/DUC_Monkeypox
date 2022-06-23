@@ -1,6 +1,18 @@
-#divExplainMonkeypox{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#root_header{
+    font-family: 'Noto sans KR', 'sans-serif';
+}
+#header_project_logo{
+    width:566px;
+    margin-top:80px;
+}
+#header_project_logo:hover{
+    cursor:pointer;
+}
+#header_title{
+    font-size: 13pt;
+    font-family: "Noto sans KR";
+    margin:-5px;
+    padding:0;
 }
