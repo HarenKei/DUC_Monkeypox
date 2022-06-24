@@ -1,82 +1,81 @@
 import React, {useEffect, useState} from 'react';
 import world from '../../Sources/Map/world.json';
 import { VectorMap } from '@south-paw/react-vector-maps';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
 import ExamData from '../../Sources/example.json';
 
-const natlData = ExamData.map((item, index) => {
-  
-  });
+
 
 const Map = () => {
+    const countryData = ExamData.map((item, index) => {
+        return(
+            <li key = {index}>
+                {item.name}({item.id}) in {item.accure}
+            </li>
+        );
+    });
+    
+
+
+    function forItem(items){
+        for(var i = 0; i < items.length; i++){
+            return(css`
+                    &[id="${items[i].id}"]{
+                        fill:red;
+                    }
+            `);
+        }
+    }
+    
+    let items = Object.values(ExamData);
+    var countryLength = items.length;
+   
     
    const Map = styled.div`
         margin: 1rem auto;
         width: 500px;
 
         svg{
-            stroke: #fff;
+            stroke: #000;
 
             path {
                 fill: grey;
                 cursor: pointer;
                 outline: none;
 
-                &[id="ru"]{
-                    fill : red;
+                &[id="gb"]{
+                    fill:red;
                 }
-
+                &[id="pt"]{
+                    fill:red;
+                }
                 &[id="us"]{
-                    fill : red;
+                    fill:red;
                 }
           
-                // When a layer is hovered
                 &:hover {
                   fill: pink;
-                  &[id="ru"]{
-                    fill: pink;
-                }
-                  
-                }
-                path{
-                    &[id="ru"]{
-                        
-                    }
-                    
                 }
             }
-
-            
-            
-            
         }
    `;
-   console.log(Map);
-
-   const style = { margin: '1rem auto', width: '300px'};
    const [current, setCurrent] = useState(null);
-   
-
-    const [hovered, setHovered] = useState('None');
-    const [color, setColor] = useState('grey');
+   const [hovered, setHovered] = useState('None');
 
     const layerProps = {
         onMouseEnter: ({ target }) => setHovered(target.attributes.name.value),
-        onMouseLeave: ({ target }) => setHovered('None'),
-        onClick: ({ target }) => setColor("blue"),
+        onMouseLeave: ({ target }) => setHovered('None')
     };
     
-    console.log(hovered);
     return(
-        <div style={style}>
-            <Map>
-                <VectorMap {...world} layerProps={layerProps} currentLayers={[current]} />
-            </Map>           
-      <ul>
-    
-      </ul>
-            <hr />
+        
+        <div>
             <p>Hovered: {hovered && <code>{hovered}</code>}</p>
+            <Map>
+                <VectorMap {...world} layerProps={{layerProps}} />
+            </Map>           
+      
         </div>
     )
 }
