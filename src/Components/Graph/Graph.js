@@ -33,8 +33,6 @@ import testData from '../../testData.json';
                 <Tooltip />
 
                 <Bar
-
-                <Line
                   type="monotone"
 
                   dataKey="count"

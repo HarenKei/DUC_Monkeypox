@@ -1,0 +1,15 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#map p{
+    color:#1e1e1e;
+    font-family:'Noto sans KR';
+    font-size:14pt;
+    font-weight:bold;
+}
+#map p:nth-child(3){
+    color:#333333;
+    font-family:'Noto sans KR';
+    font-size:11pt;
+    padding-bottom:30px;
+    font-weight:normal;
+}
