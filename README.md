@@ -2,7 +2,7 @@
 ## Team q1w2e3r4! // MONKEYPOX LIVE
 원숭이두창 국내 유행 조짐이 보여 해커톤 주제로 선정한 프로젝트
 
-## 👥  팀원 | Collabrator
+## 👥  팀원 | Collabrators
 <table>
 <tr>
 <td align="center">
