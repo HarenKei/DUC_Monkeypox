@@ -53,6 +53,9 @@
     float:right;
     margin-right:4%;
 }
+.hidden{
+    display:none;
+}
 .open{
     animation: animation-open 0.5s;
     transform: rotate(180deg);
