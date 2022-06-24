@@ -5,11 +5,10 @@ import {
     CartesianGrid,
     XAxis,
     YAxis,
-
-
     Tooltip
 } from "recharts";
 import testData from '../../testData.json';
+<<<<<<< HEAD
 
 
 
@@ -43,5 +42,36 @@ import testData from '../../testData.json';
           </div>
       )
     };
+=======
+import "./Graph.css";
+
+const Graph = () => {
+    return(
+        <div id="graph">
+            <BarChart
+                width={970}
+                height={500}
+                data={ testData }
+                margin={{
+                    top: 5,
+                    bottom: 25,
+                    right: 35
+                }
+            }>
+            <CartesianGrid strokeDasharray="2" />
+            <XAxis dataKey="name"/>
+            <YAxis/>
+            <Tooltip/>
+            <Bar
+                name="확진자 수"
+                dataKey="count"
+                fill="#8884d8"
+                barSize={50}
+            />
+            </BarChart>
+        </div>
+    )
+};
+>>>>>>> 44337212791c91f4616cb71b7f45063b5d766ad8
 
 export default Graph;

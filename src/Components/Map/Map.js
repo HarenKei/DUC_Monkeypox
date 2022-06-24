@@ -4,6 +4,7 @@ import { VectorMap } from '@south-paw/react-vector-maps';
 import styled, {css} from 'styled-components';
 import "./Map.css";
 import ExamData from '../../Sources/example.json';
+import "./Map.css";
 
 
 
@@ -33,10 +34,11 @@ const Map = () => {
    
     
    const Map = styled.div`
-        margin: 1rem auto;
-        width: 500px;
+        width:920px;
+        margin:30px;
 
         svg{
+<<<<<<< HEAD
             stroke: #000;
 
             path {
@@ -50,12 +52,46 @@ const Map = () => {
           
                 &:hover {
                   fill: pink;
+=======
+            stroke: #fff;
+            path{
+                fill: grey;
+                cursor: pointer;
+                outline: none;
+                &[id="ru"]{
+                    fill : red;
+                }
+                &[id="us"]{
+                    fill : red;
+                }
+                &:hover {
+                  fill: pink;
+                  &[id="ru"]{
+                    fill: pink;
+                }
+                }
+                path{
+                    &[id="ru"]{
+                        
+                    }
+                    
+>>>>>>> 44337212791c91f4616cb71b7f45063b5d766ad8
                 }
             }
         }
    `;
+<<<<<<< HEAD
    const [current, setCurrent] = useState(null);
    const [hovered, setHovered] = useState('None');
+=======
+
+    const style = { margin: '1rem auto', width: '300px'};
+    const [current, setCurrent] = useState(null);
+   
+
+    const [hovered, setHovered] = useState('None');
+    const [color, setColor] = useState('grey');
+>>>>>>> 44337212791c91f4616cb71b7f45063b5d766ad8
 
     const layerProps = {
         onMouseEnter: ({ target }) => setHovered(target.attributes.name.value),
@@ -70,6 +106,14 @@ const Map = () => {
     var month = now.getMonth() + 1;
     var day = now.getDate();
     
+<<<<<<< HEAD
+=======
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    
+>>>>>>> 44337212791c91f4616cb71b7f45063b5d766ad8
     return(
         <div id="map">
             <p>전세계 누적 확진자: 0명</p>

@@ -1,3 +1,47 @@
-*{
-    text-align: center;
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+#root_overseas{
+    width:1280px;
+    font-family: 'Noto sans KR', 'Jeju Gothic', 'sans-serif';
+    margin-top:80px;
+}
+#overseas_main_title{
+    color:#1e1e1e;
+    font-family:'Jeju Gothic';
+    font-weight:bold;
+    font-size:24pt;
+    word-spacing:2px;
+}
+#overseas_sub_title{
+    color:#bcbcbc;
+    font-family:'Noto sans KR';
+    font-size:12pt;
+}
+#overseas_box{
+    display:block;
+    width:980px;
+    margin:0 auto;
+    margin-top:20px;
+    border:3px solid #000;
+    border-radius:30px;
+}
+#overseas_box p:nth-child(1){
+    color:#1e1e1e;
+    font-family:'Noto sans KR';
+    font-size:14pt;
+    font-weight:bold;
+    padding-top:20px;
+}
+#overseas_box p:nth-child(2){
+    color:#1e1e1e;
+    font-family:'Noto sans KR';
+    font-size:14pt;
+    font-weight:bold;
+}
+#overseas_box p:nth-child(3){
+    color:#333333;
+    font-family:'Noto sans KR';
+    font-size:11pt;
+    padding-bottom:30px;
 }

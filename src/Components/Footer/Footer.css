@@ -3,10 +3,11 @@
 #root_footer{
     width:100%;
     font-family: 'Noto sans KR', 'sans-serif';
-    height:600px;
+    height:640px;
     background:#000000;
+    margin-top:120px;
 }
-p{
+#root_footer p{
     color:#ffffff;
 }
 #footer_team_logo{
@@ -15,13 +16,21 @@ p{
     cursor:pointer;
 }
 #footer_names{
+    margin-top:30px;
+}
+#footer_names a{
     font-family:'Noto sans KR';
     font-size:16pt;
-    margin-top:30px;
+    text-decoration:none;
+    color:#ffffff;
+}
+#footer_names a:hover{
+    text-decoration:underline;
 }
 #footer_school{
     font-family:'Noto sans KR';
     margin-top:30px;
+    font-size:13.5pt;
 }
 #logos{
     display:block;
@@ -34,8 +43,17 @@ p{
     margin:0 15px;
     cursor:pointer;
 }
-#footer_source{
+#footer_announcement{
     font-family:'Noto sans KR';
     margin-top:50px;
+    font-size:12pt;
+}
+#footer_announcement b{
+    text-decoration: underline;
+}
+#footer_source{
+    margin-top:30px;
+    font-family:'Noto sans KR';
+    font-size:12pt;
 
 }
