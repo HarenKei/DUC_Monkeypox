@@ -1,6 +1,5 @@
 import React from 'react';
-import world from '../../Sources/Map/world.json';
-import { VectorMap } from '@south-paw/react-vector-maps';
+import Map from '../Map/Map';
 import '../Overseas/Overseas.css';
 
 const Overseas = () => {
@@ -11,7 +10,8 @@ const Overseas = () => {
             </h1>
             <p>밝게 표시된 국가는 원숭이 두창 확진자가 발생한 국가입니다.</p>
             <p>마우스를 올리면 해당 국가의 원숭이 두창 확진자 추이를 볼 수 있습니다.</p>
-            <VectorMap width="50%" height="50%" {...world}/>
+            <Map/>
+            
         </div>
     )
 }

@@ -9,12 +9,6 @@ const Domestic = () => {
 
     const newArrayData = Data.map((item, index) => {
         countCnt += item.count;
-        console.log(index);
-        return (
-          <li key={index}>
-            {item.name}({item.count})
-          </li>
-        );
       });
 
     return(
@@ -27,9 +21,8 @@ const Domestic = () => {
 
                 <div id = "divNumberofDomestic">
                     <p>대한민국 확진 현황</p><br/>
-                    누적 : { countCnt } <br/>
-                    오늘 : <br/>
-                    { newArrayData }
+                    누적 : { countCnt } 명 <br/>
+                    오늘 :  { Data[Data.length-1].count} 명<br/>
                 </div>
             </div>
         </div>
