@@ -1,12 +1,11 @@
 import React from "react";
 import {
-    LineChart,
-    Line,
+    BarChart,
+    Bar,
+    CartesianGrid,
     XAxis,
     YAxis,
-    CartesianGrid,
-    Tooltip,
-    Legend
+    Tooltip
 } from "recharts";
 import testData from '../../testData.json';
 
@@ -15,29 +14,27 @@ import testData from '../../testData.json';
   const Graph = () => {
       return(
           <div>
-              <LineChart
-                    width={500}
-                    height={300}
+              <BarChart
+                    width={900}
+                    height={400}
                     data={ testData }
                     margin={{
                         top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5
+                        right: 0,
+                        left: 0,
+                        bottom: 25
                     }}
                 >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Legend />
-                <Line
-                  type="monotone"
+                <Bar
                   dataKey="count"
-                  stroke="#8884d8"
-                  activeDot={{ r: 8 }}
+                  fill="#8884d8"
+                  barSize={30}
                 />
-                </LineChart>
+                </BarChart>
           </div>
       )
     };
