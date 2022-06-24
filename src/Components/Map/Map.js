@@ -8,6 +8,13 @@ import ExamData from '../../Sources/example.json';
 
 
 const Map = () => {
+    let items = Object.values(ExamData);
+    var accure = 0;
+
+    for(var i = 0; i < items.length; i++){
+        accure += items[i].accure;
+    }
+
     const countryData = ExamData.map((item, index) => {
         return(
             <li key = {index}>
@@ -15,11 +22,6 @@ const Map = () => {
             </li>
         );
     });
-    
-    
-    let items = Object.values(ExamData);
-    var countryLength = items.length;
-   
     
    const Map = styled.div`
         margin: 1rem auto;
@@ -33,26 +35,51 @@ const Map = () => {
                 cursor: pointer;
                 outline: none;
 
-                &[aria-checked='true']{
+                &[aria-checked="true"]{
                     fill:red;
                 }
           
                 &:hover {
-                  fill: pink;
+                  fill: orange;
                 }
             }
         }
    `;
    const [current, setCurrent] = useState(null);
-   const [hovered, setHovered] = useState('None');
+   const [hovered, setHovered] = useState('');
+   const [hoverId, setHoverId] = useState('None');
+
 
     const layerProps = {
         onMouseEnter: ({ target }) => setHovered(target.attributes.name.value),
+        onMouseEnter: ({ target }) => setHoverId(target.attributes.id.value),
         onMouseLeave: ({ target }) => setHovered('None')
 
     };
 
-    const checkedLayersProps = items.id;
+    const accureCountry = () => {
+        var num;
+        for(let i = 0; i < items.length; i++){
+            if(items[i].id == hoverId){
+                num = items[i].accure;
+                console.log(num);
+                break;
+            } else num = 0;
+        }
+        return num;
+    }
+
+    const nameCountry = () => {
+        var str;
+        for(let i = 0; i < world.length; i++){
+            if(world[i].id == hoverId){
+                str = world.name;
+                break;
+            }else str = "None";
+        }
+        return str;
+    }
+   
 
     var now = new Date();
     var year = now.getFullYear();
@@ -61,8 +88,8 @@ const Map = () => {
     
     return(
         <div id="map">
-            <p>전세계 누적 확진자: 0명</p>
-            <p>{hovered && <code>{hovered}</code>} 누적 확진자: {0}명</p>
+            <p>전세계 누적 확진자: {accure}명</p>
+            <p>{nameCountry()} 누적 확진자: {accureCountry()}명</p>
             <p>({year}.{month}.{day} 기준)</p>
             <Map>
                 <VectorMap {...world} layerProps={layerProps} currentLayers={[current]} />
