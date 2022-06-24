@@ -89,9 +89,11 @@ const Header = () => {
                         <br></br>
                         <br></br>
                         <br></br>
+                        <p>
                         [외부링크]<br></br>
                         <a>대한민국 질병관리청</a><br></br>
                         <a>세계보건기구(World Health Organization)</a>
+                        </p>
                     </div>
                 </div>
             </div>
