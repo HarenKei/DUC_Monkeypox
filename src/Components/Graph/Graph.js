@@ -5,8 +5,7 @@ import {
     XAxis,
     YAxis,
     CartesianGrid,
-    Tooltip,
-    Legend
+    Tooltip
 } from "recharts";
 import testData from '../../testData.json';
 
@@ -30,7 +29,6 @@ import testData from '../../testData.json';
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Legend />
                 <Line
                   type="monotone"
                   dataKey="count"
