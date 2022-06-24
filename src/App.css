@@ -1,6 +1,5 @@
 *{
-    text-align: center;
-    width:1280px;
+    overflow-x:hidden;
     margin:0 auto;
     user-select:none;
 }
