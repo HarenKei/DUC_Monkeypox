@@ -6,24 +6,24 @@ import Data from "../../testData";
 
 const Domestic = () => {
     var countCnt = 0;
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
 
     const newArrayData = Data.map((item, index) => {
         countCnt += item.count;
       });
 
     return(
-        <div id = "divDomesticWrapper">
-            <h1>국내 확진 추이</h1>
-            <div id = "divDomesticCount">
-                <div id = "divDomesticGraph">
-                    <Graph/>
-                </div> {/* End of divDomesticGraph */}
-
-                <div id = "divNumberofDomestic">
-                    <p>대한민국 확진 현황</p><br/>
-                    누적 : { countCnt } 명 <br/>
-                    오늘 :  { Data[Data.length-1].count} 명<br/>
-                </div>
+        <div id = "root_domestic">
+            <p id="main_title">국내 확진 현황</p>
+            <p id="sub_title">Confirmed Cases(South Korea)</p>
+            <div id="domestic_box">
+                <p>누적 확진자 : {countCnt}명</p>
+                <p>금일 확진자 : {Data[Data.length-1].count}명</p>
+                <p>({year}.{month}.{day} 기준)</p>
+                <Graph/>
             </div>
         </div>
     )
