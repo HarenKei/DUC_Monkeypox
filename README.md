@@ -1,6 +1,5 @@
 # 2022년 대림대학교 컴퓨터정보학부 해커톤
 ## Team q1w2e3r4! // MONKEYPOX LIVE
-<img width="200px" src="https://kdca.go.kr/html/a2/namoimage/images/000079/1_mp.jpg"><br>
 원숭이두창 국내 유행 조짐이 보여 해커톤 주제로 선정한 프로젝트
 
 ## 👥  팀원 | Collabrator
