@@ -35,6 +35,7 @@
     border:3px solid #000;
     border-radius:30px;
     cursor: pointer;
+    margin:15px 0;
 }
 .question p{
     font-family: 'Noto sans KR';
@@ -64,10 +65,13 @@
     color:#bbbbbb;
 }
 .arrow{
+    position:absolute;
     width:18pt;
     height:18pt;
     float:right;
-    margin-right:4%;
+    right:4%;
+    margin-top:6px;
+    outline:none;
 }
 .hidden{
     display:none;
