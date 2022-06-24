@@ -1,6 +1,104 @@
-#divExplainMonkeypox{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#root_header{
+    width:1280px;
+    font-family: 'Noto sans KR', 'sans-serif';
+}
+a{
+    text-decoration:none;
+    color:#bbbbbb;
+}
+a:hover{
+    text-decoration:underline;
+}
+#header_project_logo{
+    width:566px;
+    margin-top:80px;
+}
+#header_project_logo:hover{
+    cursor:pointer;
+}
+#header_title{
+    font-size: 13pt;
+    font-family: "Noto sans KR";
+    margin:-5px;
+    padding:0;
+}
+.faq-area{
+    position:relative;
+    display:block;
+    width:980px;
+    margin:0 auto;
+    margin-top:6%;
+}
+.box{
+    border:3px solid #000;
+    border-radius:30px;
+    cursor: pointer;
+}
+.question p{
+    font-family: 'Noto sans KR';
+    text-align:left;
+    font-size:18pt;
+    font-weight:bold;
+    padding:15pt 0;
+    padding-left:25px;
+    color:#1e1e1e;
+    outline:none;
+}
+.answer{
+    text-align:left;
+    font-size:18pt;
+    font-weight:normal;
+    padding-bottom:20pt;
+    padding-left:25px;
+    padding-right:70px;
+    color:#000;
+    outline:none;
+}
+.answer > span{
+    color:#247fff;
+}
+.answer > span:last-child{
+    font-size:18pt;
+    color:#bbbbbb;
+}
+.arrow{
+    width:18pt;
+    height:18pt;
+    float:right;
+    margin-right:4%;
+}
+.hidden{
+    display:none;
+}
+.open{
+    animation: animation-open 0.5s;
+    transform: rotate(180deg);
+    transform-origin:center center;
+}
+.close{
+    animation: animation-close 0.5s;
+    transform: rotate(0deg);
+    transform-origin:center center;
+}
+@keyframes animation-open{
+    0%{
+        transform: rotate(0deg); 
+        transform-origin:center center;
+    }
+    100%{
+        transform: rotate(180deg); 
+        transform-origin:center center;
+    }
+}
+@keyframes animation-close{
+    0%{
+        transform: rotate(180deg); 
+        transform-origin:center center;
+    }
+    100%{
+        transform: rotate(0deg); 
+        transform-origin:center center;
+    }
 }
