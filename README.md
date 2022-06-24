@@ -61,7 +61,7 @@
 <td align="center">
 <img src="https://cdn.iconscout.com/icon/free/png-256/jquery-7-1175152.png" width="120px" height="auto">
 <br>
-<b>Jquery</b>
+<b>jQuery</b>
 </td>
 <td align="center">
 <img src="https://cdn.iconscout.com/icon/free/png-256/java-59-1174952.png" width="120px" height="auto">
