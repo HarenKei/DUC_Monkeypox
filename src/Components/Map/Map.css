@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-#map p{
+#map p, #map code{
     color:#1e1e1e;
     font-family:'Noto sans KR';
     font-size:14pt;
