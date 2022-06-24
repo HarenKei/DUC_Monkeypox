@@ -5,9 +5,10 @@
     font-family: 'Noto sans KR', 'sans-serif';
     height:600px;
     background:#000000;
+    margin-top:120px;
 }
-p{
-    color:#ffffff;
+#root_footer p{
+    color:#ffffff !important;
 }
 #footer_team_logo{
     margin-top:70px;

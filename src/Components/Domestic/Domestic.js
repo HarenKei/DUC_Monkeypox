@@ -17,8 +17,8 @@ const Domestic = () => {
 
     return(
         <div id = "root_domestic">
-            <p id="main_title">국내 확진 현황</p>
-            <p id="sub_title">Confirmed Cases(South Korea)</p>
+            <p id="domestic_main_title">국내 확진 현황</p>
+            <p id="domestic_sub_title">Confirmed Cases(South Korea)</p>
             <div id="domestic_box">
                 <p>누적 확진자 : {countCnt}명</p>
                 <p>금일 확진자 : {Data[Data.length-1].count}명</p>
