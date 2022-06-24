@@ -8,35 +8,34 @@ import {
     Tooltip
 } from "recharts";
 import testData from '../../testData.json';
+import "./Graph.css";
 
-
-
-  const Graph = () => {
-      return(
-          <div>
-              <BarChart
-                    width={900}
-                    height={400}
-                    data={ testData }
-                    margin={{
-                        top: 5,
-                        right: 0,
-                        left: 0,
-                        bottom: 25
-                    }}
-                >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Bar
-                  dataKey="count"
-                  fill="#8884d8"
-                  barSize={30}
-                />
-                </BarChart>
-          </div>
-      )
-    };
+const Graph = () => {
+    return(
+        <div id="graph">
+            <BarChart
+                width={970}
+                height={500}
+                data={ testData }
+                margin={{
+                    top: 5,
+                    bottom: 25,
+                    right: 35
+                }
+            }>
+            <CartesianGrid strokeDasharray="2" />
+            <XAxis dataKey="name"/>
+            <YAxis/>
+            <Tooltip/>
+            <Bar
+                name="확진자 수"
+                dataKey="count"
+                fill="#8884d8"
+                barSize={50}
+            />
+            </BarChart>
+        </div>
+    )
+};
 
 export default Graph;
