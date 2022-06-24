@@ -10,7 +10,7 @@ const Header = () => {
             <img id="header_project_logo" src={project_logo_svg}></img>
             <p id="header_title">원숭이두창 실시간 정보 사이트</p>
             <div className="faq-area">
-                <div className="box" onClick={toggle_animation}>
+                <div className="box">
                     <div className="question"><p>원숭이두창 유행(Monkeypox Outbreak)이란 무엇인가요? <img src={question_arrow} className="arrow"></img></p></div>
                     <div className="answer">
                         원숭이두창(Monkeypox)은 원숭이두창바이러스(Monkeypox virus)에 감염되어<br></br>
@@ -22,13 +22,13 @@ const Header = () => {
                         콩고공화국, 카메룬 등 중·서부 아프리카 국가에서 보고되며 풍토병화 되었습니다.<br></br>
                         국내 유입가능성도 점차 증가하여 우리나라는 2022년 6월 원숭이두창을<br></br>
                         2급감염병으로 지정하고 감시를 강화하고 있습니다.<br></br>
-                        <span>(대한민국 질병관리청 발췌)</span>
+                        <span>(제공: 대한민국 질병관리청)</span>
                         <br></br>
                         <br></br>
                         <br></br>
                         <span>
-                        [외부링크]<br></br>
-                        <a href="https://www.kdca.go.kr/contents.es?mid=a20108060000" target="_blank">대한민국 질병관리청</a><br></br>
+                        [더 알아보기]<br></br>
+                        <a href="https://www.kdca.go.kr/contents.es?mid=a20108060000" target="_blank">대한민국 질병관리청(KDCA)</a><br></br>
                         <a href="https://www.who.int/health-topics/monkeypox" target="_blank">세계보건기구(World Health Organization)</a>
                         </span>
                     </div>
@@ -82,23 +82,5 @@ $(function(){
       }
     }
 });
-
-const arrow = document.getElementsByClassName('arrow')[0];
-let box_toggle = 0;
-
-function toggle_animation(){
-    if(box_toggle == 0){
-        arrow.classList.remove('close');
-        arrow.classList.add('open');
-        box_toggle = 1;
-        console.log(box_toggle);
-    }
-    else if(box_toggle == 1){
-        arrow.classList.remove('open');
-        arrow.classList.add('close');
-        box_toggle = 0;
-        console.log(box_toggle);
-    }
-}
 
 export default Header;
