@@ -4,11 +4,11 @@
     width:1280px;
     font-family: 'Noto sans KR', 'sans-serif';
 }
-a{
+#root_header a{
     text-decoration:none;
     color:#bbbbbb;
 }
-a:hover{
+#root_header a:hover{
     text-decoration:underline;
 }
 #header_project_logo{

@@ -6,14 +6,14 @@
     font-family: 'Noto sans KR', 'Jeju Gothic', 'sans-serif';
     margin-top:80px;
 }
-#main_title{
+#domestic_main_title{
     color:#1e1e1e;
     font-family:'Jeju Gothic';
     font-weight:bold;
     font-size:24pt;
     word-spacing:2px;
 }
-#sub_title{
+#domestic_sub_title{
     color:#bcbcbc;
     font-family:'Noto sans KR';
     font-size:12pt;
@@ -44,7 +44,4 @@
     font-family:'Noto sans KR';
     font-size:11pt;
     padding-bottom:30px;
-}
-graph{
-    overflow-y: hidden;
 }
