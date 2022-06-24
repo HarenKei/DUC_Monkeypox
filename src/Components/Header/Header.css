@@ -4,6 +4,13 @@
     width:1280px;
     font-family: 'Noto sans KR', 'sans-serif';
 }
+a{
+    text-decoration:none;
+    color:#000000;
+}
+a:hover{
+    text-decoration:underline;
+}
 #header_project_logo{
     width:566px;
     margin-top:80px;
@@ -27,13 +34,14 @@
 .box{
     border:3px solid #000;
     border-radius:30px;
+    cursor: pointer;
 }
-.question > p{
+.question p{
     font-family: 'Noto sans KR';
     text-align:left;
     font-size:18pt;
     font-weight:bold;
-    padding: 15pt 0;
+    padding:15pt 0;
     padding-left:25px;
     color:#1e1e1e;
     outline:none;
@@ -46,6 +54,14 @@
     padding-left:25px;
     padding-right:70px;
     color:#000;
+    outline:none;
+}
+.answer > span{
+    color:#247fff;
+}
+.answer > span:last-child{
+    font-size:18pt;
+    color:#bbbbbb;
 }
 .arrow{
     width:18pt;
