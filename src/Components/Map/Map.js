@@ -9,10 +9,8 @@ import ExamData from '../../Sources/example.json';
 
 const Map = () => {
     let items = Object.values(ExamData);
-    let worldItem = Object.values(world);
+    let worldItem = Object.values(world.layers);
     var accure = 0;
-
-    console.log(worldItem);
 
     for(var i = 0; i < items.length; i++){
         accure += items[i].accure;
@@ -48,26 +46,35 @@ const Map = () => {
             }
         }
    `;
-   const [current, setCurrent] = useState(null);
    const [hovered, setHovered] = useState('');
    const [hoverId, setHoverId] = useState('None');
 
 
     const layerProps = {
-        onMouseEnter: ({ target }) => setHovered(target.attributes.name.value),
+        onMouseEnter: ({ target }) => setHovered(target.attributes.id.value),
         onMouseLeave: ({ target }) => setHovered('None')
-
     };
 
     const accureCountry = () => {
         var num;
         for(let i = 0; i < items.length; i++){
-            if(items[i].name == hovered){
+            if(items[i].id == hovered){
                 num = items[i].accure;
                 break;
             } else num = 0;
         }
         return num;
+    }
+    
+    const koreanName = () => {
+        var str;
+        for(let i = 0; i < worldItem.length; i++){
+            if(worldItem[i].id == hovered){
+                str = worldItem[i].name_kr;
+                break;
+            }
+        }
+        return str;
     }
 
     var now = new Date();
@@ -78,10 +85,10 @@ const Map = () => {
     return(
         <div id="map">
             <p>전세계 누적 확진자: {accure}명</p>
-            <p>{hovered && <code>{hovered}</code>} 누적 확진자: {accureCountry()}명</p>
+            <p>{koreanName()} 누적 확진자: {accureCountry()}명</p>
             <p>({year}.{month}.{day} 기준)</p>
             <Map>
-                <VectorMap {...world} layerProps={layerProps} currentLayers={[current]} />
+                <VectorMap {...world} layerProps={layerProps}/>
             </Map>           
         </div>
     )
