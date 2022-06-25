@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 2022년 대림대학교 컴퓨터정보학부 해커톤
+## Team q1w2e3r4! // MONKEYPOX LIVE
+원숭이두창 국내 유행 조짐이 보여 해커톤 주제로 선정한 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 👥  팀원 | Collabrators
+<table>
+<tr>
+<td align="center">
+<a href="https://github.com/harenkei">
+<img src="https://avatars.githubusercontent.com/u/47844901?v=4" width="120px" height="auto" >
+<br>
+<b>정승민</b>
+<br>
+<p>HarenKei</p>
+</a>
+</td>
+<td align="center">
+<a href="https://github.com/hugesilver">
+<img src="https://avatars.githubusercontent.com/u/44265544?v=4" width="120px" height="auto" >
+<br>
+<b>김태은</b>
+<br>
+<p>hugesilver</p>
+</a>
+</td>
+<td align="center">
+<a href="https://github.com/charizard6">
+<img src="https://avatars.githubusercontent.com/u/107835703?v=4" width="120px" height="auto" >
+<br>
+<b>육영현</b>
+<br>
+<p>Charizard6</p>
+</a>
+</td>
+</tr>
+<tr>
+<td align="center"><b>Project Manager</b></td>
+<td align="center"><b>Front-End</b></td>
+<td align="center"><b>Back-End</b></td>
+</tr>
+</table>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🖥 언어 | Languages
+<table>
+<tr>
+<td align="center">
+<img src="https://cdn.iconscout.com/icon/free/png-256/html-2752158-2284975.png" width="120px" height="auto">
+<br>
+<b>HTML</b>
+</td>
+<td align="center">
+<img src="https://cdn.iconscout.com/icon/free/png-256/css3-11-1175239.png" width="120px" height="auto">
+<br>
+<b>CSS</b>
+</td>
+<td align="center">
+<img src="https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png" width="120px" height="auto">
+<br>
+<b>React.js</b>
+</td>
+<td align="center">
+<img src="https://cdn.iconscout.com/icon/free/png-256/jquery-7-1175152.png" width="120px" height="auto">
+<br>
+<b>jQuery</b>
+</td>
+<td align="center">
+<img src="https://cdn.iconscout.com/icon/free/png-256/java-59-1174952.png" width="120px" height="auto">
+<br>
+<b>Java</b>
+</td>
+</tr>
+</table>
